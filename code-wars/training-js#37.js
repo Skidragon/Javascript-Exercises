@@ -1,13 +1,20 @@
+'use strict'
+function countAnimals (animals,count) {
 
-function countAnimals (str,selectArr) {
-
-  if(str.match())
+  const storeCount = [];
+  const storeNumOfAnim = []
+  for(let r in count){
+    storeNumOfAnim.push((animals.match(new RegExp(count[r],"g")) || []));
 }
-
-
+  for(let r in storeNumOfAnim) {
+    storeCount.push(storeNumOfAnim[r].filter(x=>x).length);
+  }
+  return storeCount;
+}
+console.log("gra,d,j,g,,id,ds".split(/\w/).length-1)
 console.log(countAnimals("dog,cat",["dog","cat"])); //[1,1]
 console.log(countAnimals("dog,cat",["dog","cat","pig"])); //[1,1,0]
-console.log(countAnimals("dog,dog,cat",["dog","cat"])); //[2,1]
+console.log(countAnimals("dog,dog,cat,cat,cat,cat",["dog","cat"])); //[2,1]
 console.log(countAnimals("dog,dog,cat",["pig","cow"])); //[0,0]
 
 /*
