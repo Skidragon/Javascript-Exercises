@@ -10,13 +10,13 @@ while (walkBlock!=10 && walk.length==10) {
 
 if(walk[walkBlock]=='n') {
   n++;
-walkBlock++;
+  walkBlock++;
   continue;
 }
 
   if(walk[walkBlock]=='s') {
   s++;
-walkBlock++;
+  walkBlock++;
   continue;
 }
 if(walk[walkBlock]=='e') {

@@ -1,3 +1,4 @@
+//need to run the code into a different interpretor because of the ...arr1
 'use strict'
 function maxMin(arr1,arr2){
 
